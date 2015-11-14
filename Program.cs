@@ -9,7 +9,7 @@ namespace MyGameServer
         public void Main(string[] args)
         {
             
-            var server = new Server(4444);
+            var server = new Server(port);
             server.Start();
             
             while (true) {

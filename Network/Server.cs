@@ -107,6 +107,7 @@ namespace MyGameServer.Network {
         try {
           if (!client.disconnected) {
             client.stream.Write(message, 0, message.Length);
+            client.stream.Flush();
           }
         } catch (Exception ex) {
           Console.WriteLine(ex.Message);
